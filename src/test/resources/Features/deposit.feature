@@ -1,3 +1,4 @@
+@Deposit
 Feature: Deposit
 Scenario: Deposit funds for one customer
     Given the home page is displayed

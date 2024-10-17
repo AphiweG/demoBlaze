@@ -4,24 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a53a4c85-dd58-41f3-8eb7-eab855f9e24f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/CustomerHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/CustomerLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/Transactions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Runner/runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Steps/Steps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/BrowserFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/deposit.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/depositToMultipleAcc.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/transactions.feature" afterDir="false" />
+    <list default="true" id="a53a4c85-dd58-41f3-8eb7-eab855f9e24f" name="Changes" comment="I rewrote my project to be in cucumber">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CustomerHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CustomerHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CustomerLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CustomerLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/Steps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/deposit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/deposit.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/depositToMultipleAcc.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/depositToMultipleAcc.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/transactions.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/transactions.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +80,31 @@
       <option name="presentableId" value="Default" />
       <updated>1729165891298</updated>
     </task>
+    <task id="LOCAL-00001" summary="I rewrote my project to be in cucumber">
+      <option name="closed" value="true" />
+      <created>1729176831852</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729176831852</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="I rewrote my project to be in cucumber" />
+    <option name="LAST_COMMIT_MESSAGE" value="I rewrote my project to be in cucumber" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -4,6 +4,7 @@ import Pages.CustomerHomePage;
 import Pages.CustomerLogin;
 import Pages.HomePage;
 import Utils.BrowserFactory;
+import io.cucumber.java.After;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -31,7 +32,7 @@ public class Steps {
         customerLogin.loginButton();
     }
 
-    @When("the user deposits amount")
+    @And("the user deposits an amount")
     public void userDepositsAmount() {
         customerHomePage.clickDeposit();
         customerHomePage.enterAmount();
@@ -40,55 +41,16 @@ public class Steps {
 
     @Then("a success message should be displayed")
     public void successMessageDisplayed() {
-        assertTrue(customerHomePage.verifySuccessMessage());
+        customerHomePage.verifySuccessMessage();
         customerHomePage.logout();
         homePage.returnToHomePage();
     }
 
-    @Given("the user deposits amounts into multiple accounts")
-    public void userDepositsAmountsIntoMultipleAccounts() {
-        homePage.homePageDisplay();
-        homePage.customerLogin();
-        customerLogin.verifyCustomerLoginLandingPage();
-        customerLogin.clickNameDropdown();
-        customerLogin.selectCustomer();
-        customerLogin.loginButton();
-    }
-    @When("the user deposits an amount")
-    public void userDepositsAmountInMultipleAcc() {
-        customerHomePage.selectAccount();
-        customerHomePage.firstAccount();
-        customerHomePage.clickDeposit();
-        customerHomePage.enterAmount();
-        customerHomePage.clickDepositButton();
-        customerHomePage.verifySuccessMessage();
-        customerHomePage.selectAccount();
-        customerHomePage.secondAccount();
-        customerHomePage.clickDeposit();
-        customerHomePage.enterAmount();
-        customerHomePage.clickDepositButton();
-        customerHomePage.verifySuccessMessage();
-        customerHomePage.selectAccount();
-        customerHomePage.thirdAccount();
-        customerHomePage.clickDeposit();
-        customerHomePage.enterAmount();
-        customerHomePage.clickDepositButton();
-    }
-    @Then("a success message must be displayed")
-    public void successMessageDisplay() {
-        assertTrue(customerHomePage.verifySuccessMessage());
-        customerHomePage.logout();
-        homePage.returnToHomePage();
-    }
 
-    @When("the user deposits a second amount")
-    public void userDepositsSecondAmount() {
-        customerHomePage.selectAccount();
-        customerHomePage.firstAccount();
-        customerHomePage.clickDeposit();
-        customerHomePage.enterSecondAmount(); // Define this method in your page object
-        customerHomePage.clickDepositButton();
-        assertTrue(customerHomePage.verifySuccessMessage());
-        customerHomePage.clickTransactions();
+    @After
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }

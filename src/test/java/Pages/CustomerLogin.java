@@ -26,5 +26,7 @@ public class CustomerLogin {
     }
     public void clickNameDropdown() { nameDropdown_xpath.click();}
     public void selectCustomer() { customer_xpath.click();}
-    public void loginButton(){ loginButton_xpath.click();}
+    public void loginButton(){
+        new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(loginButton_xpath));
+        loginButton_xpath.click();}
 }

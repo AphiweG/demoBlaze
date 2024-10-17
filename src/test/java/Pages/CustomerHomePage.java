@@ -10,7 +10,7 @@ import java.time.Duration;
 
 public class CustomerHomePage {
     WebDriver driver;
-    @FindBy(xpath = "//button[contains(.,'Deposit')]")
+    @FindBy(xpath = "//button[@ng-class='btnClass2'][contains(.,'Deposit')]")
     WebElement depositButton_xpath;
     @FindBy(xpath = "//input[@type='number']")
     WebElement amount_xpath;
@@ -32,7 +32,7 @@ public class CustomerHomePage {
     WebElement transactions_xpath;
 
     public void clickDeposit(){
-        new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(depositButton_xpath));
+        new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.visibilityOf(depositButton_xpath));
         depositButton_xpath.click();
     }
 
