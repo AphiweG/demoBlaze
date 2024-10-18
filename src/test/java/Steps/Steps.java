@@ -80,6 +80,12 @@ public class Steps {
         customerHomePage.logout();
         homePage.returnToHomePage();
     }
+    @After
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 
 
 
