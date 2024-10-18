@@ -7,7 +7,6 @@ import Utils.BrowserFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import static org.junit.Assert.*;
@@ -45,12 +44,43 @@ public class Steps {
         customerHomePage.logout();
         homePage.returnToHomePage();
     }
-
-
-    @After
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
+    @Given("the home page displayed")
+    public void homePageDisplay() {
+        homePage.homePageDisplay();
     }
+
+    @When("the user logs in as customer")
+    public void userLogsInAsACustomer() {
+        homePage.customerLogin();
+        customerLogin.verifyCustomerLoginLandingPage();
+        customerLogin.clickNameDropdown();
+        customerLogin.selectCustomer();
+        customerLogin.loginButton();
+        customerHomePage.selectAccount(account);
+    }
+
+    @When("the user deposits amounts into multiple accounts")
+    public void userDepositsAmountsIntoMultipleAccounts() {
+        depositAmountForAccount(customerHomePage.firstAccount());
+        depositAmountForAccount(customerHomePage.secondAccount());
+        depositAmountForAccount(customerHomePage.thirdAccount());
+    }
+    String account;
+
+    public void depositAmountForAccount(String account) {
+
+        customerHomePage.clickDeposit();
+        customerHomePage.enterAmount(); // Make sure this method sets the amount you want to deposit
+        customerHomePage.clickDepositButton();
+        customerHomePage.verifySuccessMessage();
+    }
+    @Then("success messages should be displayed for each deposit")
+    public void successMessageIsDisplayed() {
+        customerHomePage.verifySuccessMessage();
+        customerHomePage.logout();
+        homePage.returnToHomePage();
+    }
+
+
+
 }

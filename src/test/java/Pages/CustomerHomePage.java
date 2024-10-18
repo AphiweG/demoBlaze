@@ -51,10 +51,19 @@ public class CustomerHomePage {
         return false;
     }
     public void logout(){logoutButton_xpath.click();}
-    public void selectAccount(){selectAcc_xpath.click();}
-    public void secondAccount(){secondAcc_xpath.click();}
-    public  void thirdAccount(){thirdAcc_xpath.click();}
-    public  void firstAccount(){firstAcc_xpath.click();}
+    public void selectAccount(String account){
+        new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(selectAcc_xpath));
+        selectAcc_xpath.click();}
+    public String secondAccount(){secondAcc_xpath.click();
+        return null;
+    }
+    public String thirdAccount(){thirdAcc_xpath.click();
+        return null;
+    }
+    public String firstAccount(){firstAcc_xpath.click();
+
+        return null;
+    }
     public void clickTransactions(){transactions_xpath.click();}
 
 

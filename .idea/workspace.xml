@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a53a4c85-dd58-41f3-8eb7-eab855f9e24f" name="Changes" comment="I rewrote my project to be in cucumber">
+    <list default="true" id="a53a4c85-dd58-41f3-8eb7-eab855f9e24f" name="Changes" comment="Completed test case number 1 (feature: deposit)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CustomerHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CustomerHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CustomerLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CustomerLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Runner/runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Steps/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/Steps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/deposit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/deposit.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Features/depositToMultipleAcc.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/depositToMultipleAcc.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/transactions.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/transactions.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2nZ1fVzuzOw6XumbzpwTkp90tv9" />
@@ -88,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729176831852</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Completed test case number 1 (feature: deposit)">
+      <option name="closed" value="true" />
+      <created>1729180893435</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729180893435</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,7 +114,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I rewrote my project to be in cucumber" />
-    <option name="LAST_COMMIT_MESSAGE" value="I rewrote my project to be in cucumber" />
+    <MESSAGE value="Completed test case number 1" />
+    <MESSAGE value="Completed test case number 1 (feature: deposit)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed test case number 1 (feature: deposit)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -113,11 +125,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Runner/runner.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
