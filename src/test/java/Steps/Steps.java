@@ -59,7 +59,7 @@ public class Steps {
         customerHomePage.selectAccount(account);
     }
 
-    @When("the user deposits amounts into multiple accounts")
+    @And("the user deposits amounts into multiple accounts")
     public void userDepositsAmountsIntoMultipleAccounts() {
         depositAmountForAccount(customerHomePage.firstAccount());
         depositAmountForAccount(customerHomePage.secondAccount());
@@ -70,7 +70,7 @@ public class Steps {
     public void depositAmountForAccount(String account) {
 
         customerHomePage.clickDeposit();
-        customerHomePage.enterAmount(); // Make sure this method sets the amount you want to deposit
+        customerHomePage.enterAmount();
         customerHomePage.clickDepositButton();
         customerHomePage.verifySuccessMessage();
     }
@@ -79,6 +79,32 @@ public class Steps {
         customerHomePage.verifySuccessMessage();
         customerHomePage.logout();
         homePage.returnToHomePage();
+    }
+    @Given("the user is in home page")
+    public void homePage() {
+        homePage.homePageDisplay();
+    }
+
+    @When("the user is logged in as a customer")
+    public void userLoggedInAsACustomer() {
+        homePage.customerLogin();
+        customerLogin.verifyCustomerLoginLandingPage();
+        customerLogin.clickNameDropdown();
+        customerLogin.selectCustomer();
+        customerLogin.loginButton();
+    }
+
+    @And("the deposits a second amount")
+    public void userDepositsSecondAmount() {
+        customerHomePage.clickDeposit();
+        customerHomePage.enterSecondAmount();
+        customerHomePage.clickDepositButton();
+        customerHomePage.verifySuccessMessage();
+    }
+
+    @Then("the transaction history should be accessible")
+    public void transactionHistoryIsDisplayed() {
+        customerHomePage.clickTransactions();
     }
     @After
     public void tearDown() {
