@@ -28,8 +28,9 @@ public class CustomerHomePage {
     WebElement thirdAcc_xpath;
     @FindBy(xpath = "//option[@label='1001'][contains(.,'1001')]")
     WebElement firstAcc_xpath;
-    @FindBy(xpath = "//button[@ng-class='btnClass1'][contains(.,'Transactions')]")
+    @FindBy(xpath = "//button[contains(.,'Transactions')]")
     WebElement transactions_xpath;
+
 
     public void clickDeposit(){
         new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.visibilityOf(depositButton_xpath));
@@ -64,7 +65,10 @@ public class CustomerHomePage {
 
         return null;
     }
-    public void clickTransactions(){transactions_xpath.click();}
+    public void clickTransactions(){
+        new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(transactions_xpath));
+        transactions_xpath.click();}
+
 
 
 

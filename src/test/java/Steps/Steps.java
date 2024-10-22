@@ -3,6 +3,7 @@ package Steps;
 import Pages.CustomerHomePage;
 import Pages.CustomerLogin;
 import Pages.HomePage;
+import Pages.Transactions;
 import Utils.BrowserFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.en.*;
@@ -17,6 +18,7 @@ public class Steps {
     HomePage homePage = PageFactory.initElements(driver, HomePage.class);
     CustomerLogin customerLogin = PageFactory.initElements(driver, CustomerLogin.class);
     CustomerHomePage customerHomePage = PageFactory.initElements(driver, CustomerHomePage.class);
+    Transactions transactions = PageFactory.initElements(driver, Transactions.class);
 
     @Given("the home page is displayed")
     public void homePageDisplayed() {homePage.homePageDisplay();
@@ -92,10 +94,14 @@ public class Steps {
         customerLogin.clickNameDropdown();
         customerLogin.selectCustomer();
         customerLogin.loginButton();
+
     }
 
     @And("the deposits a second amount")
     public void userDepositsSecondAmount() {
+        customerHomePage.clickTransactions();
+        transactions.clickRest();
+        transactions.clickBackButton();
         customerHomePage.clickDeposit();
         customerHomePage.enterSecondAmount();
         customerHomePage.clickDepositButton();
@@ -105,6 +111,10 @@ public class Steps {
     @Then("the transaction history should be accessible")
     public void transactionHistoryIsDisplayed() {
         customerHomePage.clickTransactions();
+        transactions.transactionsHomePage();
+        transactions.verifyAmountDisplay();
+        customerHomePage.logout();
+
     }
     @After
     public void tearDown() {

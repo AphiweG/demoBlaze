@@ -18,8 +18,6 @@ public class HomePage {
     @FindBy(xpath = "//button[contains(@class,'btn home')]")
     WebElement returnToHomePage_xpath;
 
-    public HomePage(WebDriver driver){this.driver = driver;}
-
     public void homePageDisplay(){
         new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(homepage_xpath));
         homepage_xpath.isDisplayed();}
