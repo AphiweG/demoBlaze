@@ -4,19 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5eecd66-8897-4568-a6e8-5400cd19f747" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="b5eecd66-8897-4568-a6e8-5400cd19f747" name="Changes" comment="Added allure reports and screenshots">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CustomerHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CustomerHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Transactions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/Steps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/runner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="origin/Aphiwe" />
@@ -44,13 +47,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aphiwem/Documents/Projects/demoBlaze&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Aphiwem/Desktop/Projects/cucumbersauceDemo4thGroup",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,6 +63,23 @@
       <option name="presentableId" value="Default" />
       <updated>1729228985434</updated>
     </task>
+    <task id="LOCAL-00001" summary="I changed the element locator on Transactions screen. I added Reset before depositing the final amount">
+      <option name="closed" value="true" />
+      <created>1729584221009</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729584221009</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added allure reports and screenshots">
+      <option name="closed" value="true" />
+      <created>1729586285468</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729586285468</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -72,5 +92,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="I changed the element locator on Transactions screen. I added Reset before depositing the final amount" />
+    <MESSAGE value="Added allure reports and screenshots" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added allure reports and screenshots" />
   </component>
 </project>
