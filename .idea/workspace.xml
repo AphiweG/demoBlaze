@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5eecd66-8897-4568-a6e8-5400cd19f747" name="Changes" comment="Added allure reports and screenshots">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/runner.java" afterDir="false" />
+    <list default="true" id="b5eecd66-8897-4568-a6e8-5400cd19f747" name="Changes" comment="Removed allure report">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +77,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729586285468</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Removed allure report">
+      <option name="closed" value="true" />
+      <created>1729627579862</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729627579862</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,6 +102,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I changed the element locator on Transactions screen. I added Reset before depositing the final amount" />
     <MESSAGE value="Added allure reports and screenshots" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added allure reports and screenshots" />
+    <MESSAGE value="Removed allure report" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed allure report" />
   </component>
 </project>
