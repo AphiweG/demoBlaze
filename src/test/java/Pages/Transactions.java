@@ -19,7 +19,7 @@ public class Transactions {
     WebElement transactionsHome_xpath;
     @FindBy(xpath = "//button[@class='btn'][contains(.,'Back')]")
     WebElement backButton_xpath;
-    @FindBy(xpath = "//td[contains(.,'31459')]")
+    @FindBy(xpath = "//td[@class='ng-binding'][contains(.,'31459')]")
     WebElement verifyAmountDisplay_xpath;
     public Transactions(WebDriver driver){
         this.driver=driver;

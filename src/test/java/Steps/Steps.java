@@ -6,11 +6,15 @@ import Pages.HomePage;
 import Pages.Transactions;
 import Utils.BrowserFactory;
 import io.cucumber.java.After;
-import io.cucumber.java.en.*;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-
-import static org.junit.Assert.*;
 
 public class Steps {
     BrowserFactory browserFactory = new BrowserFactory();
@@ -115,6 +119,13 @@ public class Steps {
         transactions.verifyAmountDisplay();
         customerHomePage.logout();
 
+    }
+    @After
+    public void takeScreenshot(Scenario scenario){
+        if (scenario.isFailed()){
+            byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenshot, "image/png", "image");
+        }
     }
     @After
     public void tearDown() {

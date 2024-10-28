@@ -44,12 +44,11 @@ public class CustomerHomePage {
         new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(amount_xpath));
         amount_xpath.sendKeys("31459");}
     public void clickDepositButton(){
-        new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(deposit));
+        new WebDriverWait(driver, Duration.ofSeconds(50)).until(ExpectedConditions.visibilityOf(deposit));
         deposit.click();}
-    public boolean verifySuccessMessage(){
-        new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(successMessage_xpath));
+    public void verifySuccessMessage(){
+        new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.visibilityOf(successMessage_xpath));
         successMessage_xpath.isDisplayed();
-        return false;
     }
     public void logout(){logoutButton_xpath.click();}
     public void selectAccount(String account){

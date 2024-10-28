@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(features = "src/test/resources/Features",
         glue = {"Steps"},
         tags = "@Deposit or @Deposits or @Transaction",
-        plugin = {"pretty", "html:target/cucumber-reports.html"},
+        plugin = {"pretty", "html:Reports/cucumber.html"},
         publish = true)
 public class runner extends AbstractTestNGCucumberTests {
 }
